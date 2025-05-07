@@ -1,0 +1,18 @@
+:root {
+	color-scheme: light;
+	--button-text-color: white;
+	--button-background-color: black;
+	--primary-text-color: blue;
+
+	--custom-width: 768px;
+	--custom-color: blue;
+	--custom-size: 55px;
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--background-color: red;
+	--button-text-color: black;
+	--button-background-color: white;
+	--primary-text-color: lightblue;
+}
