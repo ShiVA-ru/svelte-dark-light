@@ -1,6 +1,12 @@
 const STORAGE_KEY = 'theme';
 
-const defaultTheme = 'dark';
+let defaultTheme = 'light';
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+console.log('prefersDark', prefersDark);
+
+defaultTheme = prefersDark ? 'dark' : 'light';
+console.log('defaultTheme', defaultTheme);
 
 const getTheme = () => {
 	if (typeof localStorage !== 'undefined') {
